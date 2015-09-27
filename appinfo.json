@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "imeetwelve@gmail.com",
+    "longName": "detectAccel",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "detectAccel",
+    "uuid": "66d5fe17-8c27-48fa-bbd1-cecfb93dcca8",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
