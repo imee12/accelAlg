@@ -86,10 +86,16 @@ void handle_init(void) {
    if ( data[1].y > 2500)
      {
      shotTime = now; 
-   //  triggerRotationTime = shotTime + .25;
-     vibes_short_pulse();
-   //  triggerTimeoutTime = shotTime + 1;
+     triggerRotationTime = shotTime + .25;
+   //  vibes_short_pulse();
+     triggerTimeoutTime = shotTime + 1;
    }
+
+    while (shotTime > (shotTime + .25) && shotTime < (shotTime + 1))
+      if (data[1].z > 3000)
+      {
+      vibes_short_pulse();
+    }
        
 //      if(now > triggerRotationTime && now < triggerTimeoutTime) {
 //      //  if(data[1].z  > 3000 ) {
